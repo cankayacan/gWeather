@@ -1,0 +1,40 @@
+.temperature {
+    font-size: 62;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.status-text {
+    font-size: 32;
+    font-weight: 100;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.city {
+    font-size: 24;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.bg {
+    background-color: #202020;
+}
+
+.forecast-image {
+    width: 20;
+    height: 20;
+}
+
+.cold {
+    background-color: #2980b9;
+}
+
+.warm {
+    background-color: #d35400;
+}
+
+.hot {
+    background-color: #B72526;
+}

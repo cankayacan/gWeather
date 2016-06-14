@@ -1,0 +1,21 @@
+<StackLayout *ngIf="weather"
+             [class.cold]="weather.status == WeatherStatus.Cold"
+             [class.warm]="weather.status == WeatherStatus.Warm"
+             [class.hot]="weather.status == WeatherStatus.Hot">
+    <GridLayout horizontalAlignment="center"
+                verticalAlignment="center"
+                columns="*"
+                rows="* * * *">
+        <TextField row="0" hint="City" class="city" returnKeyType="done" (returnPress)="refresh()" [(ngModel)]="city"></TextField>
+        <Image row="1" src="~/images/{{weather.icon}}.png" stretch="none" horizontalAlignment="center"></Image>
+        <Label row="2" text="{{weather.temperature}} °C" class="temperature"></Label>
+        <Label row="3" text="{{weather.statusText}}" class="status-text"></Label>
+    </GridLayout>
+    <StackLayout *ngIf="forecast" orientation="horizontal">
+        <StackLayout *ngFor="let weather of forecast.weathers">
+            <Image src="~/images/{{weather.icon}}.png" class="forecast-image" stretch="aspectFit" horizontalAlignment="center"></Image>
+            <Label text="{{weather.temperature}} °C" class="forecast-temperature"></Label>
+            <Label text="{{weather.statusText}}" class="forecast-status-text"></Label>
+        </StackLayout>
+    </StackLayout>
+</StackLayout>
