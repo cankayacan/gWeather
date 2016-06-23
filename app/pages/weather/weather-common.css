@@ -22,11 +22,6 @@
     background-color: #202020;
 }
 
-.forecast-image {
-    width: 20;
-    height: 20;
-}
-
 .cold {
     background-color: #2980b9;
 }
@@ -37,4 +32,28 @@
 
 .hot {
     background-color: #B72526;
+}
+
+.forecast-image {
+    width: 20;
+    height: 20;
+}
+
+.forecast {
+    margin-right: 10;
+}
+
+.forecast-day {
+    text-transform: uppercase;
+}
+
+.forecast-temperature {
+    font-size: 12;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.forecast-status-text {
+    color: #FFFFFF;
+    text-align: center;
 }

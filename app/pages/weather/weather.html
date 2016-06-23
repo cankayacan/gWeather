@@ -11,11 +11,12 @@
         <Label row="2" text="{{weather.temperature}} °C" class="temperature"></Label>
         <Label row="3" text="{{weather.statusText}}" class="status-text"></Label>
     </GridLayout>
-    <StackLayout *ngIf="forecast" orientation="horizontal">
-        <StackLayout *ngFor="let weather of forecast.weathers">
+    <StackLayout *ngIf="forecast" orientation="horizontal" horizontalAlignment="center">
+        <StackLayout *ngFor="let weather of forecast.weathers" class="forecast">
+            <Label text="{{weather.day}}" class="forecast-day" horizontalAlignment="center"></Label>
             <Image src="~/images/{{weather.icon}}.png" class="forecast-image" stretch="aspectFit" horizontalAlignment="center"></Image>
-            <Label text="{{weather.temperature}} °C" class="forecast-temperature"></Label>
-            <Label text="{{weather.statusText}}" class="forecast-status-text"></Label>
+            <Label text="{{weather.temperature}} °C" class="forecast-temperature" horizontalAlignment="center"></Label>
+            <Label text="{{weather.statusText}}" class="forecast-status-text" horizontalAlignment="center"></Label>
         </StackLayout>
     </StackLayout>
 </StackLayout>

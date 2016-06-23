@@ -1,22 +1,16 @@
 {
-  "name": "Groceries",
+  "name": "gWeather",
   "version": "1.0.0",
-  "description": "A NativeScript-built iOS and Android app for managing grocery lists",
+  "description": "Glispa weather app.",
   "repository": {
     "type": "git",
     "url": "https://github.com/nativescript/sample-Groceries.git"
   },
-  "keywords": [
-    "NativeScript"
-  ],
-  "author": "TJ VanToll <tj.vantoll@gmail.com> (http://tjvantoll.com/)",
+  "author": "Can Kayacan (can.kayacan@glispamedia.com)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nativescript/sample-Groceries/issues"
-  },
   "homepage": "https://github.com/nativescript/sample-Groceries/groceries",
   "nativescript": {
-    "id": "org.nativescript.groceries",
+    "id": "org.glispa.weather",
     "tns-ios": {
       "version": "2.0.0"
     },
