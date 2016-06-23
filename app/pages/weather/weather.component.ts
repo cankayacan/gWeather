@@ -1,7 +1,6 @@
 import {Component, OnInit} from "@angular/core";
 import {Weather, WeatherStatus} from "../../shared/weather";
 import {WeatherService} from "../../shared/weather.service";
-import {Router} from "@angular/router-deprecated";
 import {Page} from "ui/page";
 import {Forecast} from "../../shared/forecast";
 
