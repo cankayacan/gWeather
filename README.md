@@ -1,3 +1,8 @@
+
+![screenshot-1](https://raw.githubusercontent.com/cankayacan/gWeather/master/screenshots/1.png)
+![screenshot-2](https://raw.githubusercontent.com/cankayacan/gWeather/master/screenshots/2.png)
+![screenshot-3](https://raw.githubusercontent.com/cankayacan/gWeather/master/screenshots/3.png)
+
 # gWeather
 
 
